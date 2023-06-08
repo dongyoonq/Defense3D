@@ -41,4 +41,9 @@ public class BaseUI : MonoBehaviour
                 texts.Add(key, text);
         }
     }
+
+    public virtual void CloseUI()
+    {
+
+    }
 }

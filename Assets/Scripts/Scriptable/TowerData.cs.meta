@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f2c2f1562e2aa7f4aac2dc5fc723c655
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - lv1Tower: {instanceID: 0}
+  - lv2Tower: {instanceID: 0}
+  - lv3Tower: {instanceID: 0}
+  - lv4Tower: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

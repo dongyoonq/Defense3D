@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get { return instance; } }
     public static PoolManager Pool { get { return poolManager; } }
-    public static ResourceManager Resouce { get { return resourceManager; } }
+    public static ResourceManager Resource { get { return resourceManager; } }
     public static UIManager Ui { get { return uiManager; } }
 
     private void Awake()

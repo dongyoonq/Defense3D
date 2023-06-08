@@ -9,7 +9,7 @@ public class ExitPopUpUI : PopUpUI
         base.Awake();
 
         buttons["YesButton"].onClick.AddListener(() => { ExitGame(); });
-        buttons["NoButton"].onClick.AddListener(() => { GameManager.Ui.ClosePopUpUI(); });
+        buttons["NoButton"].onClick.AddListener(() => { base.CloseUI(); });
 
     }
 

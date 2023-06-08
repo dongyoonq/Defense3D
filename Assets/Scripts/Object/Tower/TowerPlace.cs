@@ -18,7 +18,9 @@ public class TowerPlace : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Click");
+        BuildInUI buildUI = GameManager.Ui.ShowInGameUI<BuildInUI>("UI/BuildIn");
+        buildUI.SetTarget(transform);
+        buildUI.TowerPlace = this;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -30,4 +32,11 @@ public class TowerPlace : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     {
         render.material.color = normal;
     }
+
+    public void BuildTower(TowerData data)
+    {
+        GameManager.Resource.Destroy(gameObject);
+        GameManager.Resource.Instantiate(data.Towers[0].tower, transform.position, transform.rotation);
+    }
+
 }

@@ -13,7 +13,7 @@ public class PoolManager : MonoBehaviour
     {
         poolDic = new Dictionary<string, ObjectPool<GameObject>>();
         poolRoot = new GameObject("PoolRoot").transform;
-        canvasRoot = GameManager.Resouce.Instantiate<Canvas>("UI/Canvas");
+        canvasRoot = GameManager.Resource.Instantiate<Canvas>("UI/Canvas");
     }
 
     public T Get<T>(T original) where T : Object
@@ -33,6 +33,9 @@ public class PoolManager : MonoBehaviour
 
     public T Get<T>(T original, Vector3 position, Quaternion rotation, Transform parent) where T : Object
     {
+        if (original == null)
+            Debug.Log("NULL 참조 오류");
+
         if (original is GameObject)
         {
             GameObject prefab = original as GameObject;
@@ -195,6 +198,9 @@ public class PoolManager : MonoBehaviour
 
     public T GetUI<T>(T original) where T : Object
     {
+        if (original == null)
+            Debug.Log("NULL 참조 오류");
+
         if (original is GameObject)
         {
             GameObject prefab = original as GameObject;

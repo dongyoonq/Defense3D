@@ -8,4 +8,9 @@ public class PopUpUI : BaseUI
     {
         base.Awake();
     }
+
+    public override void CloseUI()
+    {
+        GameManager.Ui.ClosePopUpUI();
+    }
 }

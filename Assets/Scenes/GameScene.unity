@@ -3013,7 +3013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201183971}
   m_LocalRotation: {x: 0.46174863, y: 0, z: 0, w: 0.8870109}
-  m_LocalPosition: {x: -30, y: 50, z: -50}
+  m_LocalPosition: {x: -30, y: 62.01, z: -58.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21174,7 +21174,7 @@ GameObject:
   - component: {fileID: 1509211049}
   - component: {fileID: 1509211048}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: SceneUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21239,7 +21239,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1509211051
 RectTransform:
