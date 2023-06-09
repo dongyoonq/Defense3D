@@ -16,6 +16,8 @@ MonoBehaviour:
   - tower: {fileID: 5428851865471643010, guid: 5625463dc331367468133bc4bd1f2bac, type: 3}
     damage: 1
     range: 30
+    Attackspeed: 1
+    AttackRepeat: 1
     buildTime: 10
     buildCost: 10
     sellCost: 10

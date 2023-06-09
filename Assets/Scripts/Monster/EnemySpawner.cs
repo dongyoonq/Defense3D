@@ -11,6 +11,7 @@ public class EnemySpawner : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(SpawnRoutine());
+
     }
 
     private void OnDisable()
@@ -24,6 +25,8 @@ public class EnemySpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnTime);
             Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            EnemyData enemyData = GameManager.Resource.Load<EnemyData>("Data/EnemyData");
+            Instantiate(enemyData);
         }
     }
 }
